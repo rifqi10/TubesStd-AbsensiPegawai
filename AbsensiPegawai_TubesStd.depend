@@ -1,0 +1,27 @@
+# depslib dependency file v1.0
+1672237313 source:f:\kuliah rifqi\semester 3\struktur - data\absensipegawai_tubesstd\absensi.cpp
+	"absensi.h"
+
+1672226574 source:f:\kuliah rifqi\semester 3\struktur - data\absensipegawai_tubesstd\divisi.cpp
+	"divisi.h"
+
+1672226574 f:\kuliah rifqi\semester 3\struktur - data\absensipegawai_tubesstd\divisi.h
+	<iostream>
+
+1672226335 source:f:\kuliah rifqi\semester 3\struktur - data\absensipegawai_tubesstd\pegawai.cpp
+	"pegawai.h"
+
+1672225910 f:\kuliah rifqi\semester 3\struktur - data\absensipegawai_tubesstd\pegawai.h
+	<iostream>
+
+1672237313 f:\kuliah rifqi\semester 3\struktur - data\absensipegawai_tubesstd\absensi.h
+	"pegawai.h"
+	"divisi.h"
+	<iostream>
+
+1672237388 source:f:\kuliah rifqi\semester 3\struktur - data\absensipegawai_tubesstd\main.cpp
+	<iostream>
+	"pegawai.h"
+	"divisi.h"
+	"absensi.h"
+
