@@ -21,6 +21,7 @@ int main()
 
     adr_P P;
     adr_D D;
+    adr_A A;
 
     createList(divisi);
     insertFirst(divisi, alokasi_scd("Pengadaan"));
@@ -41,23 +42,22 @@ int main()
 
 
 
+
     createlist(absensi);
     printAbsen(absensi, pegawai);
-    cout<<"=-=-=-=-=-=-=-=-=-=-=-=-Connect=-=-=-=-=-=-=-=-=-=-=-=-=-="<<endl;
+
 
     connect(absensi, pegawai, divisi, "Gabby", "Pengadaan");
     connect(absensi, pegawai, divisi, "Aurel", "Pemasaran");
     connect(absensi, pegawai, divisi, "Tasya", "Distribusi");
     connect(absensi, pegawai, divisi, "Bella", "Akuntansi");
     connect(absensi, pegawai, divisi, "Jubaedah", "Manufaktur");
-    printAbsen(absensi, pegawai);
 
-
-    cout<<"=-=-=-=-=-=-=-=-=-=-=-Disconnect=-=-=-=-=-=-=-=-=-=-=-=-=-=-="<<endl;
     disconnect(absensi, "Gabby", "Pengadaan");
-    printAbsen(absensi, pegawai);
 
-    cout<<"=-=-=-=-=-=-=-=-=-=-=-Divisi=-=-=-=-=-=-=-=-=-=-=-=-=-=-="<<endl;
+    cout<<"=-=-=-=-=-=-=-=-=-=-=-Lembar Absensi=-=-=-=-=-=-=-=-=-=-=-=-=-=-="<<endl;
+    cout<<"Ket : Nama yang tidak tertera dinyatakan tidak hadir"<<endl;
     printAbsen(absensi, divisi);
     return 0;
+
 }
